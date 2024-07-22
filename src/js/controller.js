@@ -147,11 +147,6 @@ const controlAddRecipe = async function (newRecipe) {
   // Upload new recipe data
 }
 
-const width = window.innerWidth;
-if (width < 660) {
-  window.alert('Your screen width is too small! Rotate screen');
-}
-
 // initialization function with their handlers 
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -164,6 +159,15 @@ const init = function () {
 }
 init();
 
+
+const mes = document.querySelector('.recipe');
+const f = `<p class="width-size">Rotate Screen as it is too narrow for this application</p>`;
+
+const width = window.innerWidth;
+if (width < 660) {
+  window.alert('Your screen width is too small! Rotate screen!');
+  mes.insertAdjacentHTML('beforeend', f);
+}
 
 
 
