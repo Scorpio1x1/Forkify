@@ -51,6 +51,12 @@ body {
   }
 }
 
+.width-size {
+  font-size: 25px;
+  color: red;
+  text-align: center;
+}
+
 .btn--small, .btn--small:link, .btn--small:visited, .btn {
   background-image: linear-gradient(to right bottom, #3ffaea, #2049b9);
   border-radius: 10rem;
