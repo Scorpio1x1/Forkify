@@ -39,7 +39,7 @@ body {
   min-height: 117rem;
   margin: 4vw auto;
   display: grid;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 2rem 6rem .5rem #61555133;
 }
 

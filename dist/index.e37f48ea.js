@@ -585,7 +585,13 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"aenu9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _webImmediateJs = require("core-js/modules/web.immediate.js"); /* same as above
+var _webImmediateJs = require("core-js/modules/web.immediate.js"); /*
+const width = window.innerWidth;
+if (width < 660) {
+  window.alert('Your screen width is too small! Rotate screen!');
+  mes.insertAdjacentHTML('beforeend', f);
+}
+*/  /* same as above
 window.addEventListener('hashchange', showRecipe);
 window.addEventListener('load', showRecipe)
 */ 
@@ -718,11 +724,6 @@ const init = function() {
 init();
 const mes = document.querySelector(".recipe");
 const f = `<p class="width-size">Rotate Screen as it is too narrow for this application</p>`;
-const width = window.innerWidth;
-if (width < 660) {
-    window.alert("Your screen width is too small! Rotate screen!");
-    mes.insertAdjacentHTML("beforeend", f);
-}
 
 },{"core-js/modules/web.immediate.js":"49tUX","./model":"Y4A21","./views/recipeView":"l60JC","url:../img/icons.svg":"loVOp","regenerator-runtime/runtime":"dXNgZ","./views/searchView":"9OQAM","./views/resultsView":"cSbZE","./views/bookmarksView":"4Lqzq","./views/paginationView":"6z7bi","./views/addRecipeView":"i6DNj","./config":"k5Hzs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"49tUX":[function(require,module,exports) {
 "use strict";
